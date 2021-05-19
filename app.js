@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const taskForm = document.querySelector('#task-form');
 const taskList = document.querySelector('.collection');
 const filter = document.querySelector('#filter');
@@ -58,3 +59,26 @@ function addTask(e){
 
     e.preventDefault();
 }
+=======
+class Person {
+  constructor(firstname, lastname, yearofBirth, profession) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.yearofBirth = yearofBirth;
+    this.profession = profession;
+  }
+  greeting() {
+    return `Hello ${this.firstname} ${this.lastname}`;
+  }
+  age() {
+    return 2020 - this.yearofBirth;
+  }
+}
+
+const jamie = new Person("Jamie", "Lannister", 1980, "knight");
+
+console.log(jamie.greeting());
+console.log(jamie.age());
+
+console.log(jamie);
+>>>>>>> 99f2681 (first message)
